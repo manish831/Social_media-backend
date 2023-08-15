@@ -7,6 +7,7 @@ const helmet = require("helmet"); // Middleware for adding security headers
 const morgan = require("morgan"); // HTTP request logger
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
+const postRoute = require("./routes/posts");
 
 // Load environment variables from a .env file if needed
 dotenv.config();
@@ -30,6 +31,7 @@ mongoose
   app.use(morgan("common"));
   app.use("/api/users", userRoute);
   app.use("/api/auth", authRoute);
+  app.use("/api/posts", postRoute);
   app.get("/", (req, res) => {
     res.send("Welcome to home page ");
   })
