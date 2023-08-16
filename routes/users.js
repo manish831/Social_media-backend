@@ -122,7 +122,6 @@ router.put("/:id/follow", async (req, res) => {
 });
 
 //unfollow the user
-// Express route to handle the action of following a user
 router.put("/:id/unfollow", async (req, res) => {
   if (req.body.userId !== req.params.id) {
     try {
