@@ -1,1 +1,1 @@
-git add . && git commit -m "minor change" && git pull -u origin main && git push -u origin main
+git add . && git commit -m "minor change" && git pull origin master && git push origin master
