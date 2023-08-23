@@ -1,0 +1,24 @@
+Auth => new register user
+
+POST Request: 
+Link => https://social-media-backend-pp5a.onrender.com/api/auth/register
+Body --> raw --> json
+
+{
+    "username" : "user_name",
+    "email" : "user_email@gmail.com",
+    "password" : "user_password"
+}
+
+=> User login:
+POST request:
+Link => https://social-media-backend-pp5a.onrender.com/api/auth/login
+Body --> raw --> json
+{
+    "email" : "user_email@gmail.com",
+    "password" : "user_password"
+}
+
+
+
+
